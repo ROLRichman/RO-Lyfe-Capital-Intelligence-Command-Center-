@@ -394,3 +394,841 @@ button:hover::after {
     margin-top:12px;
 
 }
+
+/* =====================================================
+   DASHBOARD METRICS
+===================================================== */
+
+
+.dashboard-grid {
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.metric-card {
+
+    background:
+
+    linear-gradient(
+    145deg,
+    #17243a,
+    #0d1728
+    );
+
+    padding:20px;
+
+    border-radius:var(--radius);
+
+    border:
+
+    1px solid var(--border);
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.25);
+
+}
+
+
+
+.metric-card h3 {
+
+    color:var(--muted);
+
+    font-size:14px;
+
+}
+
+
+
+.metric-card h2 {
+
+    color:var(--gold);
+
+    margin-top:10px;
+
+    font-size:28px;
+
+}
+
+
+
+
+
+
+/* =====================================================
+   CARDS / SECTIONS
+===================================================== */
+
+
+.card {
+
+    background:
+
+    var(--bg-card);
+
+    border:
+
+    1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.25);
+
+}
+
+
+
+.card h2 {
+
+    color:var(--gold);
+
+    margin-bottom:15px;
+
+    font-size:21px;
+
+}
+
+
+
+.card p {
+
+    color:var(--muted);
+
+    line-height:1.5;
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   FORMS
+===================================================== */
+
+
+.form-grid {
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:12px;
+
+}
+
+
+
+input,
+select {
+
+    width:100%;
+
+    padding:13px;
+
+    background:#081522;
+
+    border:
+
+    1px solid var(--border);
+
+    border-radius:10px;
+
+    color:white;
+
+    outline:none;
+
+}
+
+
+
+input:focus,
+select:focus {
+
+    border-color:var(--gold);
+
+}
+
+
+
+
+
+
+/* =====================================================
+BUTTON GRID
+===================================================== */
+
+
+.button-grid {
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(160px,1fr));
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+
+
+.button-grid button {
+
+    width:100%;
+
+}
+
+
+
+
+
+
+/* =====================================================
+AI UNDERWRITER
+===================================================== */
+
+
+.ai-box {
+
+    border:
+
+    1px solid rgba(255,183,3,.4);
+
+}
+
+
+
+.ai-box ul {
+
+    margin:15px 0;
+
+    padding-left:20px;
+
+}
+
+
+
+.ai-box li {
+
+    margin:8px 0;
+
+    color:#d9e2ef;
+
+}
+
+
+
+#aiDecision {
+
+    margin-top:15px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    background:#081522;
+
+    min-height:60px;
+
+}
+
+
+
+
+
+
+/* =====================================================
+RESULT PANELS
+===================================================== */
+
+
+#noteResult,
+#roiResult,
+#offerResult,
+#packageStatus {
+
+    margin-top:15px;
+
+    padding:15px;
+
+    background:
+
+    var(--bg-panel);
+
+    border-radius:12px;
+
+    border:
+
+    1px solid var(--border);
+
+    color:white;
+
+}
+
+
+
+
+
+
+/* =====================================================
+TABLES
+===================================================== */
+
+
+table {
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+}
+
+
+
+th {
+
+    background:#091522;
+
+    color:var(--gold);
+
+    padding:12px;
+
+    text-align:left;
+
+}
+
+
+
+td {
+
+    padding:12px;
+
+    border-bottom:
+
+    1px solid var(--border);
+
+    color:#dce6f5;
+
+}
+
+
+
+tr:hover {
+
+    background:
+
+    rgba(255,183,3,.08);
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+FUNDING / RESOURCE BUTTONS
+===================================================== */
+
+
+.card a button {
+
+    min-height:50px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+
+footer {
+
+    text-align:center;
+
+    padding:30px 15px;
+
+    color:var(--muted);
+
+}
+
+
+
+footer h3 {
+
+    color:var(--gold);
+
+    margin-bottom:8px;
+
+}
+
+
+
+
+
+
+/* =====================================================
+SCROLLBAR
+===================================================== */
+
+
+::-webkit-scrollbar {
+
+    width:8px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background:#050b14;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:var(--gold);
+
+    border-radius:10px;
+
+}
+
+/* =====================================================
+   MOBILE COMMAND CENTER OPTIMIZATION
+===================================================== */
+
+
+@media(max-width:768px){
+
+
+    .app {
+
+        padding:10px;
+
+    }
+
+
+
+    .top-header {
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+
+
+    .brand {
+
+        width:100%;
+
+    }
+
+
+
+    .brand img {
+
+        width:55px;
+
+    }
+
+
+
+    .brand h1 {
+
+        font-size:19px;
+
+    }
+
+
+
+    .brand p {
+
+        font-size:11px;
+
+    }
+
+
+
+    .header-actions {
+
+        width:100%;
+
+    }
+
+
+
+    .header-actions button {
+
+        flex:1;
+
+    }
+
+
+
+
+
+    .dashboard-grid {
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+        gap:10px;
+
+    }
+
+
+
+
+    .metric-card {
+
+        padding:14px;
+
+    }
+
+
+
+    .metric-card h2 {
+
+        font-size:21px;
+
+    }
+
+
+
+
+    .card {
+
+        padding:15px;
+
+        border-radius:14px;
+
+    }
+
+
+
+    .card h2 {
+
+        font-size:18px;
+
+    }
+
+
+
+
+    .button-grid {
+
+        grid-template-columns:
+
+        1fr;
+
+    }
+
+
+
+
+    table {
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   EXTRA SMALL PHONES
+===================================================== */
+
+
+@media(max-width:400px){
+
+
+    .dashboard-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .login-box {
+
+        padding:20px;
+
+    }
+
+
+
+    .login-box h1 {
+
+        font-size:20px;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* =====================================================
+   THEME EFFECTS
+===================================================== */
+
+
+.dark-glow {
+
+    box-shadow:
+
+    0 0 20px rgba(255,183,3,.25);
+
+}
+
+
+
+
+.success {
+
+    color:
+
+    var(--green);
+
+}
+
+
+
+.warning {
+
+    color:
+
+    var(--gold);
+
+}
+
+
+
+.danger {
+
+    color:
+
+    var(--red);
+
+}
+
+
+
+
+
+/* =====================================================
+   LOADING ANIMATION
+===================================================== */
+
+
+.loading {
+
+    animation:
+
+    pulse 1.5s infinite;
+
+}
+
+
+
+@keyframes pulse {
+
+
+    0% {
+
+        opacity:.5;
+
+    }
+
+
+    50% {
+
+        opacity:1;
+
+    }
+
+
+    100% {
+
+        opacity:.5;
+
+    }
+
+
+}
+
+
+
+
+
+/* =====================================================
+   CARD ENTRY ANIMATION
+===================================================== */
+
+
+.card,
+.metric-card {
+
+
+    animation:
+
+    slideUp .4s ease;
+
+
+}
+
+
+
+@keyframes slideUp {
+
+
+from {
+
+    transform:translateY(15px);
+
+    opacity:0;
+
+}
+
+
+to {
+
+    transform:translateY(0);
+
+    opacity:1;
+
+}
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   FIXED MOBILE FEEL
+===================================================== */
+
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body {
+
+    overflow-x:hidden;
+
+}
+
+
+
+
+
+/* Prevent accidental zoom */
+
+input,
+button,
+select {
+
+    font-size:16px;
+
+}
+
+
+
+
+/* =====================================================
+   PRINT DEAL PACKAGE
+===================================================== */
+
+
+@media print {
+
+
+    .login-screen,
+    button,
+    .header-actions {
+
+        display:none!important;
+
+    }
+
+
+
+    body {
+
+        background:white;
+
+        color:black;
+
+    }
+
+
+    .card {
+
+        box-shadow:none;
+
+        border:1px solid #ccc;
+
+    }
+
+
+}
