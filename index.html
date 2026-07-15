@@ -1,1 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>RO'Lyfe NoteForge™ | Capital Intelligence OS</title>
+
+<meta name="description" content="RO'Lyfe NoteForge - Note Acquisition, Creative Finance, Investor Placement and Underwriting Engine">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="icon" type="image/png" href="assets/rolyfe-logo.png">
+
+</head>
+
+
+<body>
+
+
+<!-- LOGIN SCREEN -->
+
+<div id="loginScreen" class="login-screen">
+
+    <div class="login-box">
+
+        <img src="assets/rolyfe-logo.png" 
+             class="login-logo"
+             alt="RO'Lyfe Logo">
+
+
+        <h1>
+            🏦 RO'Lyfe NoteForge™
+        </h1>
+
+        <p>
+            Secure Capital Workspace
+        </p>
+
+
+        <input 
+        id="loginEmail"
+        type="email"
+        placeholder="Email">
+
+
+        <input 
+        id="loginPassword"
+        type="password"
+        placeholder="Password">
+
+
+        <button 
+        class="glow-btn"
+        onclick="loginUser()">
+
+        ENTER COMMAND CENTER
+
+        </button>
+
+
+        <small>
+        RO'Lyfe Holdings LLC<br>
+        Rooted in Access. Built for Growth.
+        </small>
+
+    </div>
+
+</div>
+
+
+
+
+
+<!-- MAIN APPLICATION -->
+
+<div id="app" class="app hidden">
+
+
+
+<!-- HEADER -->
+
+<header class="top-header">
+
+
+<div class="brand">
+
+<img src="assets/rolyfe-logo.png"
+class="logo"
+alt="RO'Lyfe">
+
+
+<div>
+
+<h1>
+RO'Lyfe NoteForge™
+</h1>
+
+<span>
+Note Acquisition • Creative Finance • Underwriting Engine
+</span>
+
+</div>
+
+
+</div>
+
+
+
+<button 
+class="menu-btn"
+onclick="toggleMenu()">
+
+☰
+
+</button>
+
+
+</header>
+
+
+
+
+
+<!-- MOBILE MENU -->
+
+<nav id="mobileMenu" class="mobile-menu">
+
+
+<button onclick="scrollSection('dashboard')">
+📊 Dashboard
+</button>
+
+
+<button onclick="scrollSection('notes')">
+📄 Notes
+</button>
+
+
+<button onclick="scrollSection('property')">
+🏠 Property Research
+</button>
+
+
+<button onclick="scrollSection('funding')">
+🏦 Funding
+</button>
+
+
+<button onclick="scrollSection('investors')">
+🤝 Investors
+</button>
+
+
+</nav>
+
+
+
+
+
+
+
+<main class="container">
+
+
+
+
+
+<!-- DASHBOARD -->
+
+<section id="dashboard"
+class="section">
+
+
+<h2>
+📊 Portfolio Command Center
+</h2>
+
+
+
+<div class="dashboard-grid">
+
+
+
+<div class="stat-card">
+
+<h3>
+Total Notes
+</h3>
+
+<div id="totalNotes">
+0
+</div>
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+<h3>
+UPB Balance
+</h3>
+
+<div id="totalUPB">
+$0
+</div>
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+<h3>
+Purchase Price
+</h3>
+
+<div id="purchasePrice">
+$0
+</div>
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+<h3>
+Target Yield
+</h3>
+
+<div id="targetYield">
+0%
+</div>
+
+</div>
+
+
+
+</div>
+
+
+
+<div class="dashboard-grid">
+
+
+
+<div class="stat-card">
+
+<h3>
+Discount Captured
+</h3>
+
+<div id="discountAmount">
+$0
+</div>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<h3>
+Monthly Cash Flow
+</h3>
+
+<div id="monthlyCashflow">
+$0
+</div>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<h3>
+Compound ROI
+</h3>
+
+<div id="compoundROI">
+0%
+</div>
+
+</div>
+
+
+
+<div class="stat-card">
+
+<h3>
+RO'Lyfe Deal Score
+</h3>
+
+<div id="dealScore">
+-- 
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- PROPERTY RESEARCH -->
+
+<section id="property"
+class="section">
+
+
+<h2>
+🔎 Property Intelligence Hub
+</h2>
+
+
+<div class="card">
+
+
+<input 
+id="propertyAddress"
+placeholder="Enter property address">
+
+
+<div class="button-grid">
+
+
+<button onclick="openZillow()">
+🏠 Zillow
+</button>
+
+
+<button onclick="openRedfin()">
+🏡 Redfin
+</button>
+
+
+<button onclick="openRealtor()">
+🔑 Realtor
+</button>
+
+
+<button onclick="openPropWire()">
+📊 PropWire
+</button>
+
+
+<button onclick="openOPA()">
+🏛 Philadelphia OPA
+</button>
+
+
+<button onclick="openPropertyChecker()">
+📍 Property Checker
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- NOTE ANALYZER -->
+
+
+<section id="notes"
+class="section">
+
+
+<h2>
+📄 Note Analyzer
+</h2>
+
+
+
+<div class="card">
+
+
+<div class="input-grid">
+
+
+<input 
+id="noteUPB"
+placeholder="Current UPB">
+
+
+<input 
+id="notePurchase"
+placeholder="Purchase Price">
+
+
+<input 
+id="noteRate"
+placeholder="Interest Rate %">
+
+
+<input 
+id="notePayment"
+placeholder="Monthly Payment">
+
+
+<input 
+id="notePayments"
+placeholder="Remaining Payments">
+
+
+</div>
+
+
+
+<button 
+class="glow-btn"
+onclick="analyzeNote()">
+
+RUN NOTE ANALYSIS
+
+</button>
+
+
+
+
+<div id="noteResults"
+class="result-box">
+
+Waiting for analysis...
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ROI ENGINE -->
+
+
+<section class="section">
+
+
+<h2>
+📈 ROI & Compound Engine
+</h2>
+
+
+<div class="card">
+
+
+<div class="input-grid">
+
+
+<input 
+id="investmentAmount"
+placeholder="Investment Amount">
+
+
+<input 
+id="cashFlow"
+placeholder="Monthly Cash Flow">
+
+
+<input 
+id="investmentYears"
+placeholder="Years">
+
+
+</div>
+
+
+
+<button 
+class="glow-btn"
+onclick="calculateROI()">
+
+CALCULATE RETURNS
+
+</button>
+
+
+<div id="roiResults"
+class="result-box">
+
+No calculation yet.
+
+</div>
+
+
+</div>
+
+
+</section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>RO'Lyfe NoteForge™ | Command Center</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="RO'Lyfe NoteForge - Note Acquisition, Creative Finance, Investor Placement, Underwriting Engine">
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- RO'Lyfe Logo -->
+<link rel="icon" type="image/png" href="assets/rolyfe-logo.png">
+
+<!-- PDF Engine -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- LOGIN OVERLAY -->
+<div id="loginScreen" class="login-screen">
+
+    <div class="login-box">
+
+        <img src="assets/rolyfe-logo.png" 
+        class="login-logo">
+
+        <h1>🏦 RO'Lyfe NoteForge™</h1>
+
+        <p>
+        Capital Intelligence Command Center
+        </p>
+
+        <input 
+        id="loginEmail"
+        type="email"
+        placeholder="Email">
+
+        <input 
+        id="loginPassword"
+        type="password"
+        placeholder="Password">
+
+        <button 
+        class="glow-btn"
+        onclick="loginUser()">
+
+        🔐 Enter Command Center
+
+        </button>
+
+        <small>
+        Powered by Root Of Lyfe Holdings LLC™
+        </small>
+
+    </div>
+
+</div>
+
+
+<!-- MAIN APP -->
+
+<div id="app" class="app hidden">
+
+
+<!-- HEADER -->
+
+<header class="top-header">
+
+<div class="brand">
+
+<img src="assets/rolyfe-logo.png">
+
+<div>
+
+<h1>
+🏦 RO'Lyfe NoteForge™
+</h1>
+
+<p>
+Note Acquisition • Creative Finance • Investor Placement • Underwriting Engine
+</p>
+
+</div>
+
+</div>
+
+
+<div class="header-actions">
+
+<button onclick="toggleTheme()">
+🌙 Theme
+</button>
+
+<button onclick="logoutUser()">
+Logout
+</button>
+
+</div>
+
+
+</header>
+
+
+
+<!-- DASHBOARD -->
+
+<section class="dashboard-grid">
+
+
+<div class="metric-card">
+
+<h3>
+📊 Total Notes
+</h3>
+
+<h2 id="totalNotes">
+0
+</h2>
+
+</div>
+
+
+<div class="metric-card">
+
+<h3>
+💰 UPB Balance
+</h3>
+
+<h2 id="totalUPB">
+$0
+</h2>
+
+</div>
+
+
+<div class="metric-card">
+
+<h3>
+🏦 Purchase Price
+</h3>
+
+<h2 id="purchasePrice">
+$0
+</h2>
+
+</div>
+
+
+<div class="metric-card">
+
+<h3>
+📈 Target Yield
+</h3>
+
+<h2 id="targetYield">
+0%
+</h2>
+
+</div>
+
+
+</section>
+
+
+
+<!-- PROPERTY RESEARCH HUB -->
+
+<section class="card">
+
+<h2>
+🔎 Property Research Hub
+</h2>
+
+
+<input 
+id="propertyAddress"
+placeholder="Enter property address">
+
+
+<div class="button-grid">
+
+
+<button onclick="openZillow()">
+🏠 Zillow
+</button>
+
+
+<button onclick="openRedfin()">
+🏡 Redfin
+</button>
+
+
+<button onclick="openRealtor()">
+📍 Realtor
+</button>
+
+
+<button onclick="openPropWire()">
+📊 PropWire
+</button>
+
+
+<button onclick="openOPA()">
+🏛 Philadelphia OPA
+</button>
+
+
+<button onclick="openPropertyChecker()">
+📄 Property Checker
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- NOTE ANALYZER -->
+
+<section class="card">
+
+<h2>
+📄 Note Analyzer
+</h2>
+
+
+<div class="form-grid">
+
+
+<input 
+id="noteUPB"
+placeholder="Current UPB">
+
+
+<input 
+id="notePurchase"
+placeholder="Purchase Price">
+
+
+<input 
+id="noteRate"
+placeholder="Interest Rate %">
+
+
+<input 
+id="notePayment"
+placeholder="Monthly Payment">
+
+
+<input 
+id="notePayments"
+placeholder="Remaining Payments">
+
+
+</div>
+
+
+<button 
+class="glow-btn"
+onclick="analyzeNote()">
+
+🧠 Analyze Note
+
+</button>
+
+
+<div id="noteResult">
+
+</div>
+
+
+  </section>
+
+  <!-- ROI & COMPOUND ENGINE -->
+
+<section class="card">
+
+<h2>
+📈 ROI & Compound Wealth Engine
+</h2>
+
+
+<div class="form-grid">
+
+<input 
+id="investmentAmount"
+placeholder="Investment Amount">
+
+
+<input 
+id="monthlyCashflow"
+placeholder="Monthly Cash Flow">
+
+
+<input 
+id="roiYears"
+placeholder="Years">
+
+
+<input 
+id="annualGrowth"
+placeholder="Annual Growth %">
+
+</div>
+
+
+<button 
+class="glow-btn"
+onclick="calculateCompoundROI()">
+
+🚀 Calculate Compound ROI
+
+</button>
+
+
+<div id="roiResult">
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- THREE TIER OFFER ENGINE -->
+
+<section class="card">
+
+<h2>
+🏠 Three Tier Creative Offer Engine
+</h2>
+
+
+<div class="form-grid">
+
+
+<input 
+id="offerARV"
+value="250000"
+placeholder="ARV">
+
+
+<select id="offerType">
+
+<option value="cash">
+💵 All Cash Offer
+</option>
+
+
+<option value="carry">
+🤝 Seller Carry Offer
+</option>
+
+
+<option value="finance">
+🏦 Seller Financing Offer
+</option>
+
+</select>
+
+
+
+<input 
+id="cashPercent"
+value="50"
+placeholder="Cash % ARV">
+
+
+<input 
+id="carryPercent"
+value="65"
+placeholder="Seller Carry % ARV">
+
+
+<input 
+id="downPayment"
+value="5"
+placeholder="Down Payment %">
+
+
+<input 
+id="interestRate"
+value="5"
+placeholder="Interest Rate %">
+
+
+<input 
+id="loanYears"
+value="4"
+placeholder="Balloon Years">
+
+
+</div>
+
+
+<button 
+class="glow-btn"
+onclick="calculateCreativeOffer()">
+
+💡 Build Offer Structure
+
+</button>
+
+
+<div id="offerResult">
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- AI UNDERWRITING -->
+
+<section class="card ai-box">
+
+
+<h2>
+🤖 AI Underwriting Layer
+</h2>
+
+
+<p>
+RO'Lyfe Risk Engine analyzes:
+</p>
+
+
+<ul>
+
+<li>
+Purchase Price vs ARV
+</li>
+
+<li>
+Loan-To-Value Risk
+</li>
+
+<li>
+Yield Potential
+</li>
+
+<li>
+Cash Flow Strength
+</li>
+
+<li>
+Exit Strategy
+</li>
+
+<li>
+Investor Fit
+</li>
+
+</ul>
+
+
+<button 
+class="glow-btn"
+onclick="runAIUnderwriter()">
+
+🧠 Run AI Deal Decision
+
+</button>
+
+
+<div id="aiDecision">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- PORTFOLIO DASHBOARD -->
+
+<section class="card">
+
+<h2>
+📚 Portfolio Command Center
+</h2>
+
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+ID
+</th>
+
+<th>
+County
+</th>
+
+<th>
+UPB
+</th>
+
+<th>
+Yield
+</th>
+
+<th>
+Status
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="portfolioTable">
+
+</tbody>
+
+
+</table>
+
+
+</section>
+
+
+
+
+
+
+<!-- FUNDING HUB -->
+
+<section class="card">
+
+<h2>
+💰 Lending & Funding Hub
+</h2>
+
+
+<div class="button-grid">
+
+
+<a href="https://form.jotform.com/261416399941062" target="_blank">
+
+<button>
+COGO Pre Application
+</button>
+
+</a>
+
+
+
+<a href="https://www.borrowersviewcentral.com/portal/applynew?id=LCS" target="_blank">
+
+<button>
+Hard Money / DSCR Application
+</button>
+
+</a>
+
+
+
+<a href="https://rootoflyfe.blnsoftware.com/" target="_blank">
+
+<button>
+RO'Lyfe Underwriting Portal
+</button>
+
+</a>
+
+
+
+<a href="https://www.nationalcorporatecredit.com/real-estate/?id=1820217000190862001" target="_blank">
+
+<button>
+Business Funding Application
+</button>
+
+</a>
+
+
+
+<a href="https://portal.asapcreditrepairusa.com/self-signup/RichardsonLegagneur28158" target="_blank">
+
+<button>
+ASAP Credit Repair
+</button>
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- DOCUMENT VAULT -->
+
+<section class="card">
+
+
+<h2>
+📂 Due Diligence Vault
+</h2>
+
+
+<div class="button-grid">
+
+
+<a href="docs/note-due-diligence-checklist.pdf" target="_blank">
+
+<button>
+✅ Note Checklist
+</button>
+
+</a>
+
+
+<a href="docs/note-analysis-template.pdf" target="_blank">
+
+<button>
+📄 Note Analysis
+</button>
+
+</a>
+
+
+<a href="docs/investor-summary-template.pdf" target="_blank">
+
+<button>
+📊 Investor Summary
+</button>
+
+</a>
+
+
+<a href="docs/broker-fee-agreement-template.pdf" target="_blank">
+
+<button>
+🤝 Broker Agreement
+</button>
+
+</a>
+
+
+<a href="docs/hard-money-underwriting-guide.pdf" target="_blank">
+
+<button>
+🏦 Underwriting Guide
+</button>
+
+</a>
+
+
+</div>
+
+
+  </section>
+
+  <!-- INVESTOR PACKAGE CENTER -->
+
+<section class="card">
+
+<h2>
+📦 Investor Package Generator
+</h2>
+
+
+<p>
+Create a professional deal package for investors, lenders, note buyers, and capital partners.
+</p>
+
+
+<div class="button-grid">
+
+
+<button 
+class="glow-btn"
+onclick="generateDealReport()">
+
+⬇ Download Deal Report
+
+</button>
+
+
+
+<button 
+class="glow-btn"
+onclick="sendDealEmail()">
+
+📧 Email Package
+
+</button>
+
+
+</div>
+
+
+<div id="packageStatus">
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- RO'LYFE QUICK LINKS -->
+
+<section class="card">
+
+
+<h2>
+🔗 RO'Lyfe Capital Resources
+</h2>
+
+
+<div class="button-grid">
+
+
+<a href="https://affiliate.nationalcorporatecredit.com/ncc/uploads" target="_blank">
+
+<button>
+📤 Expert Document Upload
+</button>
+
+</a>
+
+
+
+<a href="https://property.phila.gov" target="_blank">
+
+<button>
+🏛 Philadelphia Property Search
+</button>
+
+</a>
+
+
+
+<a href="https://opainquiry.phila.gov" target="_blank">
+
+<button>
+🏠 Philadelphia OPA
+</button>
+
+</a>
+
+
+
+<a href="https://pennsylvania.propertychecker.com" target="_blank">
+
+<button>
+📄 Property Ownership Search
+</button>
+
+</a>
+
+
+
+<a href="https://systeme.io/?sa=sa024361003597d08c1ddbe15791a7b8208556a789" target="_blank">
+
+<button>
+🚀 RO'Lyfe System
+</button>
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- EMAIL CONFIGURATION -->
+
+<section class="card">
+
+
+<h2>
+📧 Deal Submission Settings
+</h2>
+
+
+<p>
+Default Deal Package Email:
+</p>
+
+
+<h3>
+richman@rootoflyfe.com
+</h3>
+
+
+<p>
+Alternate:
+</p>
+
+
+<h3>
+richprivatelender@gmail.com
+</h3>
+
+
+</section>
+
+
+
+
+
+
+<!-- MODULE ENGINE LOADER -->
+
+
+<script src="modules/ai-underwriter.js"></script>
+
+<script src="modules/portfolio-engine.js"></script>
+
+<script src="modules/property-engine.js"></script>
+
+<script src="modules/investor-engine.js"></script>
+
+<script src="modules/document-engine.js"></script>
+
+<script src="modules/email-engine.js"></script>
+
+
+
+<!-- CALCULATOR ENGINE -->
+
+
+<script src="calculators/note-yield-calculator.js"></script>
+
+<script src="calculators/ltv-calculator.js"></script>
+
+<script src="calculators/discount-calculator.js"></script>
+
+<script src="calculators/cashflow-calculator.js"></script>
+
+<script src="calculators/compound-roi-calculator.js"></script>
+
+<script src="calculators/irr-calculator.js"></script>
+
+<script src="calculators/overage-calculator.js"></script>
+
+<script src="calculators/rehab-arv-calculator.js"></script>
+
+<script src="calculators/deal-score-engine.js"></script>
+
+<script src="calculators/creative-offer-calculator.js"></script>
+
+<script src="calculators/seller-carry-calculator.js"></script>
+
+<script src="calculators/balloon-payment-calculator.js"></script>
+
+<script src="calculators/payment-calculator.js"></script>
+
+
+
+
+<!-- DATABASE -->
+
+<script>
+
+const RO_LYFE_CONFIG = {
+
+company:
+"Root Of Lyfe Holdings LLC",
+
+brand:
+"RO'Lyfe NoteForge™",
+
+email:
+"richman@rootoflyfe.com",
+
+backupEmail:
+"richprivatelender@gmail.com",
+
+version:
+"Enterprise v1.0",
+
+database:
+"data/notes.json"
+
+};
+
+
+</script>
+
+
+
+
+<!-- MAIN ENGINE -->
+
+<script src="script.js"></script>
+
+
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+
+<h3>
+🏦 RO'Lyfe Holdings LLC™
+</h3>
+
+
+<p>
+Rooted in Access. Built for Growth.
+</p>
+
+
+<p>
+Note Acquisition • Creative Finance • Investor Placement • Underwriting
+</p>
+
+
+<p>
+© 2026 RO'Lyfe Holdings LLC
+</p>
+
+
+</footer>
+
+
+
+</body>
+
+  </html>
+
+  
