@@ -1481,6 +1481,82 @@ Note Acquisition • Creative Finance • Investor Placement • Underwriting
 </footer>
 
 
+<script>
+
+function loginUser(){
+
+    const email = document.getElementById("loginEmail").value;
+
+    if(email === ""){
+
+        alert("Enter email first");
+
+        return;
+
+    }
+
+
+    document.getElementById("loginScreen")
+    .classList.add("hidden");
+
+
+    document.getElementById("app")
+    .classList.remove("hidden");
+
+
+    localStorage.setItem(
+        "rolyfeLoggedIn",
+        "true"
+    );
+
+
+}
+
+
+
+function logoutUser(){
+
+    localStorage.removeItem(
+        "rolyfeLoggedIn"
+    );
+
+
+    document.getElementById("loginScreen")
+    .classList.remove("hidden");
+
+
+    document.getElementById("app")
+    .classList.add("hidden");
+
+
+}
+
+
+
+window.onload=function(){
+
+    if(
+    localStorage.getItem("rolyfeLoggedIn")
+    === "true"
+    ){
+
+        document
+        .getElementById("loginScreen")
+        .classList.add("hidden");
+
+
+        document
+        .getElementById("app")
+        .classList.remove("hidden");
+
+    }
+
+}
+
+
+</script>
+    
+    
 
 </body>
 
