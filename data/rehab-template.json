@@ -1,1 +1,122 @@
-
+[
+  {
+    "item": 264,
+    "description": "Architect",
+    "cost": 0
+  },
+  {
+    "item": 160,
+    "description": "Asphalt & Paving",
+    "cost": 0
+  },
+  {
+    "item": 848,
+    "description": "Basement",
+    "cost": 0
+  },
+  {
+    "item": 740,
+    "description": "Bathroom Accessories / Mirror",
+    "cost": 0
+  },
+  {
+    "item": 840,
+    "description": "Bathroom Tile",
+    "cost": 0
+  },
+  {
+    "item": 704,
+    "description": "Drywall / Tape / Texture / Sheetrock",
+    "cost": 15000
+  },
+  {
+    "item": 213,
+    "description": "Dumpster",
+    "cost": 2000
+  },
+  {
+    "item": 354,
+    "description": "Electrical Labor",
+    "cost": 8000
+  },
+  {
+    "item": 600,
+    "description": "Exterior Doors",
+    "cost": 2500
+  },
+  {
+    "item": 710,
+    "description": "Flooring",
+    "cost": 15000
+  },
+  {
+    "item": 536,
+    "description": "Framing Labor",
+    "cost": 15000
+  },
+  {
+    "item": 650,
+    "description": "Heating-Air Conditioning (HVAC)",
+    "cost": 13000
+  },
+  {
+    "item": 712,
+    "description": "Interior Painting",
+    "cost": 3000
+  },
+  {
+    "item": 842,
+    "description": "Kitchen",
+    "cost": 20000
+  },
+  {
+    "item": 646,
+    "description": "Light Fixtures / Ceiling Fans",
+    "cost": 1200
+  },
+  {
+    "item": 186,
+    "description": "Permit Fees & Inspections",
+    "cost": 3000
+  },
+  {
+    "item": 360,
+    "description": "Plumbing Labor",
+    "cost": 18000
+  },
+  {
+    "item": 582,
+    "description": "Roofing",
+    "cost": 12000
+  },
+  {
+    "item": 552,
+    "description": "Siding",
+    "cost": 8000
+  },
+  {
+    "item": 614,
+    "description": "Sinks, Toilets, Tubs, Showers",
+    "cost": 3000
+  },
+  {
+    "item": 750,
+    "description": "Stairs / Railings",
+    "cost": 1000
+  },
+  {
+    "item": 510,
+    "description": "Structural",
+    "cost": 15000
+  },
+  {
+    "item": 412,
+    "description": "Water Hook-up / Water Heater",
+    "cost": 1300
+  },
+  {
+    "item": 618,
+    "description": "Windows",
+    "cost": 8000
+  }
+]
