@@ -1,0 +1,32 @@
+deal.json
+
+{
+ "dealID":"ROLYFE-DEAL-2026-00125",
+
+ "property":{
+   "address":"",
+   "arv":"",
+   "purchasePrice":""
+ },
+
+ "borrower":{
+   "name":"",
+   "entity":"",
+   "experience":""
+ },
+
+ "rehab":{
+   "budget":"",
+   "template":"cogo"
+ },
+
+ "analysis":{
+   "dealScore":"",
+   "aiDecision":""
+ },
+
+ "capital":{
+   "lender":"",
+   "investor":""
+ }
+}
