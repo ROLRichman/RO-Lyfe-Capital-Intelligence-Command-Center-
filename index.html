@@ -543,8 +543,6 @@ onclick="analyzeNote()">
 
 
 
-
-
 <div
 
 id="noteResults"
@@ -566,6 +564,89 @@ Waiting for analysis...
 </section>
 
 
+
+<!-- ==========================
+BORROWER PROFILE
+========================== -->
+
+<section id="borrower" class="section">
+
+<h2>
+👤 Borrower Profile
+</h2>
+
+<div class="card">
+
+<div class="input-grid">
+
+<input id="guarantorName" placeholder="Primary Guarantor Name">
+
+<input id="borrowingEntity" placeholder="Borrowing Entity">
+
+<input id="borrowerEmail" placeholder="Borrower Email">
+
+<input id="borrowerPhone" placeholder="Phone Number">
+
+<input id="todayDate" type="date">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ==========================
+PROPERTY TRACK RECORD
+========================== -->
+
+<section id="trackrecord" class="section">
+
+<h2>
+🏠 Property Track Record & REO Schedule
+</h2>
+
+<div class="card">
+
+<p>
+Track completed rehab projects and currently owned investment properties for lender underwriting packages.
+</p>
+
+<div class="button-grid">
+
+<button class="glow-btn" onclick="loadTrackRecord()">
+📂 Load Track Record
+</button>
+
+<button class="glow-btn" onclick="addSoldProperty()">
+➕ Add Sold Property
+</button>
+
+<button class="glow-btn" onclick="addOwnedProperty()">
+🏢 Add REO Property
+</button>
+
+<button class="glow-btn" onclick="downloadTrackRecordPDF()">
+⬇ Download PDF
+</button>
+
+<button class="glow-btn" onclick="emailTrackRecord()">
+📧 Email Package
+</button>
+
+</div>
+
+<div id="trackRecordContainer"></div>
+
+</div>
+
+</section>    
+    
+
+
+    
 
 <!-- ==========================
 REHAB UNDERWRITING ENGINE
@@ -1676,6 +1757,12 @@ RO'LYFE ENGINE LOAD ORDER
 <script src="modules/email-engine.js"></script>
     
 <script src="modules/rehab-underwriting-engine.js"></script>
+
+<script src="modules/rehab-underwriting-engine.js"></script>
+
+<script src="modules/borrower-profile-engine.js"></script>
+
+<script src="modules/track-record-engine.js"></script>
     
 
 <!-- Calculators -->
