@@ -2,6 +2,7 @@
 =====================================
 RO'Lyfe Property Intelligence Engine
 Version: 1.0
+
 Purpose:
 Property search, valuation links,
 and real estate research tools.
@@ -18,8 +19,8 @@ alert("Enter property address first");
 return;
 }
 
-let url = 
-"https://www.redfin.com/stingray/do/location-autocomplete?location=" 
+let url =
+"https://www.redfin.com/search?q="
 + encodeURIComponent(address);
 
 window.open(url,"_blank");
