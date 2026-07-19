@@ -1606,7 +1606,9 @@ Capital Investors
 
     <button
         class="glow-btn"
-        onclick="sendDealEmail()">
+        onclick="function sendDealEmail(){
+
+}">
 
         📧 EMAIL PACKAGE
 
@@ -1804,61 +1806,20 @@ RO'LYFE ENGINE LOAD ORDER
 ========================== -->
 
 
-
-
-
-<!-- Modules -->
-    
-    
 <!-- ==========================
-RO'LYFE CORE MODULE LOAD ORDER
+DEAL FOUNDATION LAYER
 ========================== -->
-
-
-<!-- Deal Creation / Foundation -->
 
 <script src="modules/deal-intake-engine.js"></script>
 
 <script src="modules/deal-workspace-engine.js"></script>
 
 
-<!-- Property + Borrower Data -->
 
-<script src="modules/property-engine.js"></script>
-
-<script src="modules/borrower-profile-engine.js"></script>
-
-<script src="modules/rehab-underwriting-engine.js"></script>
-
-<script src="modules/track-record-engine.js"></script>
-
-
-<!-- Intelligence Layer -->
-
-<script src="modules/ai-underwriter.js"></script>
-
-<script src="modules/portfolio-engine.js"></script>
-
-
-<!-- Documents + Communication -->
-
-<script src="modules/signature-engine.js"></script>
-
-<script src="modules/lender-package-generator.js"></script>
-
-<script src="modules/document-engine.js"></script>
-
-<script src="modules/email-engine.js"></script>
-
-
-<!-- Investor Layer -->
-
-<script src="modules/investor-engine.js"></script>    
-
-    
-
-    
-<!-- Calculators -->
+<!-- ==========================
+CALCULATION ENGINE LAYER
+(Must load before underwriting + packages)
+========================== -->
 
 <script src="calculators/note-yield-calculator.js"></script>
 
@@ -1886,6 +1847,51 @@ RO'LYFE CORE MODULE LOAD ORDER
 
 <script src="calculators/payment-calculator.js"></script>
 
+
+
+<!-- ==========================
+PROPERTY + BORROWER DATA LAYER
+========================== -->
+
+<script src="modules/property-engine.js"></script>
+
+<script src="modules/borrower-profile-engine.js"></script>
+
+<script src="modules/rehab-underwriting-engine.js"></script>
+
+<script src="modules/track-record-engine.js"></script>
+
+
+
+<!-- ==========================
+AI INTELLIGENCE LAYER
+========================== -->
+
+<script src="modules/ai-underwriter.js"></script>
+
+<script src="modules/portfolio-engine.js"></script>
+
+
+
+<!-- ==========================
+DOCUMENT + CAPITAL PACKAGE LAYER
+========================== -->
+
+<script src="modules/signature-engine.js"></script>
+
+<script src="modules/document-engine.js"></script>
+
+<script src="modules/lender-package-generator.js"></script>
+
+<script src="modules/email-engine.js"></script>
+
+
+
+<!-- ==========================
+INVESTOR PLACEMENT LAYER
+========================== -->
+
+<script src="modules/investor-engine.js"></script>
 
 
 
