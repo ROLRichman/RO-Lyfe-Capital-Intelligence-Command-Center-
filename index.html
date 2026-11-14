@@ -23,6 +23,7 @@ RO'Lyfe Capital Intelligence Command Center™
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 
+  <link rel="stylesheet" href="rol-engine-identity.css?v=20261113-1">
 </head>
 
 
@@ -163,6 +164,8 @@ Logout
 
 
 </header>
+<section class="rol-engine-hero rol-capital-hero" data-rol-engine="capital"><div class="rol-capital-copy"><p class="eyebrow">RO’LYFE CAPITAL INTELLIGENCE</p><h2>Move deals with clarity.</h2><p>From property intelligence to capital placement, keep the next move visible and the details within reach.</p></div><div class="rol-engine-visual" aria-hidden="true"><span class="rol-visual-halo"></span><span class="rol-visual-ring"></span><span class="rol-visual-ring ring-two"></span><span class="rol-visual-core" data-mark="⌂"></span><span class="rol-visual-signal"></span><span class="rol-visual-caption">DEALS · CAPITAL · INTELLIGENCE</span></div><button class="rol-motion-toggle" type="button" data-rol-motion-toggle aria-pressed="false">Pause motion</button></section>
+
 
 
 
@@ -2411,6 +2414,7 @@ window.jotformEmbedHandler(
     
 
 
+<script>(()=>{const root=document.documentElement;document.querySelectorAll('[data-rol-motion-toggle]').forEach(button=>button.addEventListener('click',()=>{const paused=root.classList.toggle('rol-motion-paused');button.setAttribute('aria-pressed',String(paused));button.textContent=paused?'Resume motion':'Pause motion';}));})();</script>
 </body>
 
 
